@@ -1,20 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 int main() {
 
-    // print math operations on doubles
-    printf("%f\n", 8.9 + 4.5 );
+    char name[20];
 
-    // using mathmatical functios
-    printf("%f\n", pow(2,3) );
+    printf("Enter your name: ");
 
-    printf("%f\n", sqrt(36) );
+    fgets(name, 20, stdin);
 
-    printf("%f\n", ceil(36.234) );
-
-    printf("%f\n", floor(36.234) );
+    printf("Your name is: %s", name);
 
     return 0;
 }
